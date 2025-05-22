@@ -33,7 +33,7 @@ As principais técnicas e tecnologias aplicadas neste projeto são:
 
 `Acesse o projeto:` https://github.com/adrianodev83/projeto-bluo
 
-Ou visualize diretamente pelo navegador: [bluo.vercel.app](https://bluo.vercel.app) *(exemplo)*
+Ou visualize diretamente pelo navegador: [bluo.vercel.app](https://projeto-bluo.vercel.app/)
 
 ## 👨‍💻 Como me encontrar:
 
