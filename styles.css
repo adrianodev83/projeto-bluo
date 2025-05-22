@@ -1,0 +1,160 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --azul-escuro: #001f3f;
+  --azul-claro: #0074D9;
+  --turquesa: #39CCCC;
+  --preto: #111111;
+  --branco: #ffffff;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--branco);
+  color: var(--preto);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+.btn.btn-turquesa {
+  background-color: #39CCCC !important;
+  color: #001f3f !important;
+  border: none;
+}
+
+.btn.btn-turquesa:hover {
+  background-color: #2bb3b3 !important;
+  color: #001f3f !important;
+}
+
+.navbar {
+  background-color: var(--azul-escuro) !important;
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+.nav-link {
+  color: var(--branco) !important;
+  margin-left: 1rem;
+}
+
+.nav-link:hover {
+  color: var(--turquesa) !important;
+}
+
+.hero {
+  background: linear-gradient(to right, var(--azul-escuro), var(--azul-claro));
+  color: var(--branco);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+}
+
+.hero .text-turquesa {
+  color: var(--turquesa);
+  font-weight: 600;
+}
+
+.hero-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Seções Conta e Cartões */
+#conta, #cartoes {
+  padding: 4rem 2rem;
+}
+
+#conta img, #cartoes img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+#conta .btn, #cartoes .btn {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+#cartoes {
+  background-color: var(--azul-escuro);
+}
+
+#cartoes h2, #cartoes p {
+  color: var(--branco);
+}
+
+/* Benefícios */
+#beneficios .card {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+#beneficios .card:hover {
+  transform: translateY(-5px);
+}
+
+#beneficios .card-title {
+  font-weight: 600;
+}
+
+#beneficios .btn {
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+/* FAQ */
+#faq .accordion-button {
+  background-color: var(--branco);
+  color: var(--azul-escuro);
+  font-weight: 600;
+}
+
+#faq .accordion-button:not(.collapsed) {
+  color: var(--turquesa);
+  background-color: #f0f0f0;
+}
+
+#faq .accordion-body {
+  color: var(--preto);
+}
+
+/* Responsivo */
+@media (max-width: 1200px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  #conta .container, #cartoes .container {
+    flex-direction: column !important;
+    text-align: center;
+  }
+  #beneficios .col-md-6 {
+    margin-bottom: 1rem;
+  }
+  #beneficios .card {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  #beneficios .col-md-6 {
+    width: 100%;
+  }
+}
